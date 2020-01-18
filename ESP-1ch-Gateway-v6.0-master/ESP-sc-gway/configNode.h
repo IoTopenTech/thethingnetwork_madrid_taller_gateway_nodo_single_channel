@@ -124,8 +124,8 @@ struct wpas {
 //
 wpas wpa[] = {
 	{ "" , "" },							// Reserved for WiFi Manager
-	{ "yourSSID", "yourPassword" },
-	{ "Your2SSID", "your2Password" }
+	{ "ONO_NANSA", "20062008" },
+	{ "WiFi2", "LaContraseñaDeLWiFi2" }
 };
 
 

@@ -205,13 +205,13 @@ struct pins {
 
 #elif _PIN_OUT==2
 // ----------------------------------------------------------------------------
-// For ComResult gateway PCB use the following settings
+// Pinout para la placa de gateway monocanal desarrollada por la comunidad TTN Madrid
 struct pins {
-	uint8_t dio0=5;		// GPIO5 / D1. Dio0 used for one frequency and one SF
-	uint8_t dio1=4;		// GPIO4 / D2. Used for CAD, may or not be shared with DIO0
-	uint8_t dio2=0;		// GPIO0 / D3. Used for frequency hopping, don't care
-	uint8_t ss=15;		// GPIO15 / D8. Select pin connected to GPIO15
-	uint8_t rst=0;		// GPIO0  / D3. Reset pin not used	
+  uint8_t dio0=5;   // GPIO5 / D1. Dio0 used for one frequency and one SF
+  uint8_t dio1=4;   // GPIO4 / D2. Used for CAD, may or not be shared with DIO0
+  uint8_t dio2=0;   // GPIO0 / D3. Used for frequency hopping, don't care
+  uint8_t ss=16;    // GPIO16 / D0. //Cambiado por juanfe
+  uint8_t rst=0;    // GPIO0 / D3. Reset pin not used 
 } pins;
 
 
@@ -267,6 +267,7 @@ struct pins {
 // MOSI 13 / D7
 // CLK  14 / D5
 // SS   16 / D0
+
 #error "Pin Definitions _PIN_OUT must be defined in loraModem.h"
 #endif
 
@@ -545,4 +546,3 @@ struct LoraUp {
 #define MGT_RESET					0x15		// Not a LoRa Gateway Spec message
 #define MGT_SET_SF					0x16
 #define MGT_SET_FREQ				0x17
-

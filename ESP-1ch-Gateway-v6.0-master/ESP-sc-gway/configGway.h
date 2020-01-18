@@ -97,7 +97,7 @@
 // This parameters contains the default value of SF, the actual version can be set with
 // the webserver and it will be stored in SPIFF
 // NOTE: The frequency is set in the loraModem.h file and is default 868.100000 MHz.
-#define _SPREADING SF9
+#define _SPREADING SF7
 
 
 // Channel Activity Detection
@@ -107,7 +107,7 @@
 // continuous listen mode.
 // Using this function means that we HAVE to use more dio pins on the RFM95/sx1276
 // device and also connect enable dio1 to detect this state. 
-#define _CAD 1
+#define _CAD 0
 
 // CRCCHECK
 // Defines whether we should check on the CRC of RXDONE messages (see stateMachine.ino)
@@ -136,11 +136,11 @@
 // If you use one of these two, just set the parameter to the right value.
 // If your pin definitions are different, update the loraModem.h file to reflect these settings.
 //	1: HALLARD
-//	2: COMRESULT pin out
+//	2: Gateway TTN Madrid
 //	3: ESP32 Wemos pin out
 //	4: ESP32 TTGO pin out (should work for Heltec, 433 and OLED too).
 //	5: Other, define your own in loraModem.h (does not include GPS Code)
-#define _PIN_OUT 4
+#define _PIN_OUT 2
 
 
 // Single channel gateways if they behave strict should only use one frequency 
@@ -224,11 +224,11 @@
 
 
 // Gateway Ident definitions. Where is the gateway located?
-#define _DESCRIPTION "ESP Gateway"			// Name of the gateway
-#define _EMAIL "mw12554@hotmail.com"		// Owner
+#define _DESCRIPTION "Single Channel 868.1MHz SF7"			// Name of the gateway
+#define _EMAIL "juanfelixmateos@gmail.com"		// Owner
 #define _PLATFORM "ESP8266"
-#define _LAT 52.237367
-#define _LON 5.978654
+#define _LAT 40.39927
+#define _LON -3.7022
 #define _ALT 14								// Altitude
 
 // ntp
@@ -303,5 +303,3 @@
 // and need no changing
 #define _TTNSERVER "router.eu.thethings.network"
 #define _TTNPORT 1700							// Standard port for TTN
-
-

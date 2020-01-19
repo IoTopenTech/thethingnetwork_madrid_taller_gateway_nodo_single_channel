@@ -1,3 +1,5 @@
+Se ha modificado esta aplicación para que utilice los pines de la placa adaptadora desarrollada por TTN Madrid.
+
 # Single Channel LoRaWAN Gateway
 
 Version 6.1.7, 

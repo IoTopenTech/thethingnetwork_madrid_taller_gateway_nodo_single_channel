@@ -1,5 +1,0 @@
-{
-    "sketch": "lora_mini_node_ttn_madrid_abp_puerta_abierta.ino",
-    "board": "MiniCore:avr:328",
-    "configuration": "bootloader=true,variant=modelP,BOD=1v8,LTO=Os,clock=8MHz_external"
-}
